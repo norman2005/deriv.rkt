@@ -83,8 +83,8 @@
 
 (define (addend-div s) (or(cadr s) (car s ))) ;ok
 
-;; you're allowed to have augend also be a constructor
-;; you will need to test for the length of the augend, and do
+;; you're allowed to have augend-div also be a constructor
+;; you will need to test for the length of the augend-div, and do
 ;; something different the length=1 case and length is 2+ case. 
 (define (augend-div s)
  (apply make-div (cddr s)))
